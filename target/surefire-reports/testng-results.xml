@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-29T06:17:49 EDT" name="Regression Suite" finished-at="2020-06-29T06:19:47 EDT" duration-ms="117083">
+    <groups>
+    </groups>
+    <test started-at="2020-06-29T06:17:49 EDT" name=" test" finished-at="2020-06-29T06:19:47 EDT" duration-ms="117083">
+      <class name="academy.ValidateNavBar">
+        <test-method signature="navigatingToLoginPage()[pri:0, instance:academy.ValidateNavBar@53ca01a2]" started-at="2020-06-29T06:19:10 EDT" name="navigatingToLoginPage" finished-at="2020-06-29T06:19:24 EDT" duration-ms="14046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.ValidateNavBar@53ca01a2]" started-at="2020-06-29T06:19:44 EDT" name="tearDown" finished-at="2020-06-29T06:19:46 EDT" duration-ms="1467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.ValidateNavBar -->
+      <class name="academy.HomePage">
+        <test-method signature="navigatingToLoginPage(java.lang.String, java.lang.String)[pri:0, instance:academy.HomePage@14ec4505]" started-at="2020-06-29T06:17:50 EDT" name="navigatingToLoginPage" data-provider="getData" finished-at="2020-06-29T06:18:14 EDT" duration-ms="24629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[demirci_orhan@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xt4y58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToLoginPage -->
+        <test-method signature="navigatingToLoginPage(java.lang.String, java.lang.String)[pri:0, instance:academy.HomePage@14ec4505]" started-at="2020-06-29T06:18:14 EDT" name="navigatingToLoginPage" data-provider="getData" finished-at="2020-06-29T06:18:44 EDT" duration-ms="30080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xy@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7483urfn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToLoginPage -->
+        <test-method signature="navigatingToLoginPage(java.lang.String, java.lang.String)[pri:0, instance:academy.HomePage@14ec4505]" started-at="2020-06-29T06:18:44 EDT" name="navigatingToLoginPage" data-provider="getData" finished-at="2020-06-29T06:19:10 EDT" duration-ms="25615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rtu@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[84ufml.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.HomePage@14ec4505]" started-at="2020-06-29T06:19:43 EDT" name="tearDown" finished-at="2020-06-29T06:19:44 EDT" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.HomePage -->
+      <class name="academy.ValidateTitle">
+        <test-method signature="navigatingToLoginPage()[pri:0, instance:academy.ValidateTitle@358c99f5]" started-at="2020-06-29T06:19:24 EDT" name="navigatingToLoginPage" finished-at="2020-06-29T06:19:43 EDT" duration-ms="19091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:academy.ValidateTitle@358c99f5]" started-at="2020-06-29T06:19:46 EDT" name="tearDown" finished-at="2020-06-29T06:19:47 EDT" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- academy.ValidateTitle -->
+    </test> <!--  test -->
+  </suite> <!-- Regression Suite -->
+</testng-results>

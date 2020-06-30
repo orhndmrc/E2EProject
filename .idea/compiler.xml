@@ -9,5 +9,6 @@
         <module name="E2EProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="14" />
   </component>
 </project>
