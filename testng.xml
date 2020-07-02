@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name = "Regression Suite" parallel="tests">
+<suite name = "Regression Suite" >
 
     <listeners>
         <listener class-name="academy.Listeners"></listener>
@@ -14,17 +14,13 @@
     </test>
         <test name=" test2">
             <classes>
-
-                <class name="academy.ValidateNavBar"></class>
-
+                <class name="academy.ValidateTitle"></class>
             </classes>
         </test>
 
     <test name=" test3">
         <classes>
-
-            <class name="academy.ValidateTitle"></class>
-
+            <class name="academy.ValidateNavBar"></class>
         </classes>
     </test>
 

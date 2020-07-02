@@ -16,7 +16,7 @@ public class LoginPageObjects {
 //    @FindBy(id = "user_email")
 //    WebElement email;
 
-By password = By.xpath("//input[contains(@class,'input-hg') and @name='user[password]']");
+By password = By.xpath("//input[@id='user_password']");
 //    @FindBy(xpath = "//input[contains(@class,'input-hg') and @name='user[password]']")
 //    WebElement password;
 

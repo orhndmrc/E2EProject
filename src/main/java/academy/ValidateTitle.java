@@ -13,12 +13,12 @@ import resources.base;
 import java.io.IOException;
 
 public class ValidateTitle extends base {
-    public WebDriver driver;
+
     HomePageObjects homePageObjects;
     LoginPageObjects loginPageObjects;
     @Test
-    public void navigatingToLoginPage() throws IOException {
-        driver=initializeDriver();
+    public void validatingTitle() throws IOException {
+       initializeDriver();
         homePageObjects = new HomePageObjects(driver);
         Assert.assertEquals(homePageObjects.getTitle().getText(),"FEATURED COURSES","failure");
 

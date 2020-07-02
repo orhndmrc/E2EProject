@@ -16,11 +16,12 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class base  {
-      public WebDriver driver;
-    Properties prop;
-      String url;
-    public WebDriver initializeDriver() throws IOException {
-         prop =new Properties();
+      public static WebDriver driver;
+
+
+    public static void initializeDriver() throws IOException {
+        String url;
+        Properties prop  =new Properties();
         FileInputStream fis = new FileInputStream("C:\\Users\\demir\\E2EProject\\src\\main\\java\\resources\\browser1.properties");
         prop.load(fis);
         String browserName = prop.getProperty("browser");
@@ -50,13 +51,17 @@ public class base  {
 
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        return driver;
+
     }
 
-    public void getScreenShotPath(String testCaseName,WebDriver driver) throws IOException {
+    public void getScreenShotPath(String testCaseName) {
         TakesScreenshot screenShot =(TakesScreenshot) driver;
        File source =  screenShot.getScreenshotAs(OutputType.FILE);
-       String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-        FileUtils.copyFile(source,new File(destinationFile));
+       String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".jpg";
+        try {
+            FileUtils.copyFile(source,new File(destinationFile));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

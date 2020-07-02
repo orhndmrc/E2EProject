@@ -22,7 +22,7 @@ public class HomePageObjects {
 //    @FindBy(xpath = "//div[@class='text-center']/h2")
 //     WebElement title;
 
-    By NavBar = By.cssSelector("ul[class='nav navbar-nav navbar-right12345']>li>a");
+    By NavBar = By.cssSelector("ul[class='nav navbar-nav navbar-right']>li>a");
 
     public void getLogin(){
          login.click();

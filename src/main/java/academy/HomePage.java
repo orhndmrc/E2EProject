@@ -15,14 +15,14 @@ import resources.base;
 import java.io.IOException;
 
 public class HomePage extends base {
-    public WebDriver driver;
+
     HomePageObjects homePageObjects;
     LoginPageObjects loginPageObjects;
 
 
     @Test( dataProvider = "getData")
     public void navigatingToLoginPage(String Username, String Passwrd) throws IOException {
-        driver=initializeDriver();
+        initializeDriver();
         homePageObjects = new HomePageObjects(driver);
         Assert.assertEquals(homePageObjects.getTitle().getText(),"FEATURED COURSES","failure");
         homePageObjects.getLogin();

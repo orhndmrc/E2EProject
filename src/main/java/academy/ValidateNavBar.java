@@ -12,12 +12,12 @@ import resources.base;
 import java.io.IOException;
 
 public class ValidateNavBar extends base {
-    public WebDriver driver;
+
     HomePageObjects homePageObjects;
     LoginPageObjects loginPageObjects;
     @Test
-    public void navigatingToLoginPage() throws IOException {
-        driver=initializeDriver();
+    public void validatingNavBar() throws IOException {
+        initializeDriver();
         homePageObjects = new HomePageObjects(driver);
         Assert.assertTrue(homePageObjects.getNavBar().isDisplayed(),"failure");
 
